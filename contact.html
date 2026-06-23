@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Maison Habaya</title>
+    <meta
+      name="description"
+      content="Contacter Maison Habaya pour une commande, une taille, une livraison ou un conseil produit."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Maison Habaya accueil">
+        <span>Maison</span>
+        <strong>Habaya</strong>
+      </a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Ouvrir le menu" />
+      <label class="menu-button" for="nav-toggle" aria-hidden="true">
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="boutique.html">Boutique</a>
+        <a href="categories.html">Categories</a>
+        <a href="index.html#savoir-faire">Savoir-faire</a>
+        <a class="cart-link" href="paiement.html">Panier <span data-cart-count>0</span></a>
+        <a class="is-current" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-page reveal">
+        <div class="contact-heading">
+          <p class="eyebrow">Contact</p>
+          <h1>Parlons de votre piece.</h1>
+          <p>
+            Besoin d'une taille, d'une couleur, d'une retouche ou d'une livraison ? Envoyez votre
+            message et Maison Habaya vous repond avec les disponibilites.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form" id="contact-form">
+            <div class="field-group">
+              <div class="field">
+                <label for="contact-name">Nom</label>
+                <input id="contact-name" type="text" placeholder="Votre nom" />
+              </div>
+              <div class="field">
+                <label for="contact-phone">Telephone</label>
+                <input id="contact-phone" type="tel" placeholder="+225..." />
+              </div>
+            </div>
+            <div class="field-group">
+              <div class="field">
+                <label for="contact-subject">Sujet</label>
+                <select id="contact-subject">
+                  <option>Commande</option>
+                  <option>Taille</option>
+                  <option>Couleur</option>
+                  <option>Livraison</option>
+                  <option>Retouche</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="contact-model">Modele</label>
+                <input id="contact-model" type="text" placeholder="Nom du modele si connu" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="contact-message">Message</label>
+              <textarea
+                id="contact-message"
+                rows="6"
+                placeholder="Votre demande, couleur souhaitee, taille, date ou lieu de livraison..."
+              ></textarea>
+            </div>
+            <button class="button dark-button contact-submit" type="submit">Preparer le message</button>
+          </form>
+
+          <aside class="contact-panel">
+            <span class="summary-tag">Boutique</span>
+            <h2>Maison Habaya</h2>
+            <p>
+              Reponse sous 24h ouvrables. Les paiements sont confirmes apres verification de la
+              disponibilite.
+            </p>
+            <div class="contact-list">
+              <a href="tel:+2250000000000">+225 00 00 00 00 00</a>
+              <a id="contact-mail" href="mailto:contact@maisonhabaya.com">contact@maisonhabaya.com</a>
+              <span>Abidjan, livraison locale</span>
+            </div>
+            <a class="summary-mail" href="boutique.html">Retour boutique</a>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer pro-footer">
+      <div class="footer-main">
+        <div class="footer-brand-block">
+          <a class="brand" href="index.html" aria-label="Maison Habaya accueil">
+            <span>Maison</span>
+            <strong>Habaya</strong>
+          </a>
+          <p>
+            Contact, conseils taille, couleurs, retouches simples et validation de disponibilite.
+          </p>
+        </div>
+        <nav class="footer-col" aria-label="Boutique">
+          <h3>Boutique</h3>
+          <a href="boutique.html">Toutes les pieces</a>
+          <a href="categories.html">Categories</a>
+          <a href="categorie-habayas.html">Habayas</a>
+          <a href="paiement.html">Panier & paiement</a>
+        </nav>
+        <nav class="footer-col" aria-label="Service client">
+          <h3>Service</h3>
+          <a href="index.html#guide">Guide des tailles</a>
+          <a href="index.html#savoir-faire">Savoir-faire</a>
+          <a href="commande.html">Commande privee</a>
+          <a href="contact.html">Assistance</a>
+        </nav>
+        <div class="footer-col footer-contact">
+          <h3>Contact</h3>
+          <p>Abidjan, livraison locale et expedition sur demande.</p>
+          <a href="tel:+2250000000000">+225 00 00 00 00 00</a>
+          <a href="mailto:contact@maisonhabaya.com">contact@maisonhabaya.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Maison Habaya</span>
+        <span>Paiement confirme apres validation de disponibilite.</span>
+        <a href="boutique.html">Retour boutique</a>
+      </div>
+    </footer>
+  </body>
+</html>

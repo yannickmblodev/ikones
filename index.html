@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Habaya | Vetements habaya premium</title>
+    <meta
+      name="description"
+      content="Maison Habaya, boutique elegante de vetements habaya et abayas premium pour le quotidien, les ceremonies et les pieces sur mesure."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Maison Habaya accueil">
+        <span>Maison</span>
+        <strong>Habaya</strong>
+      </a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Ouvrir le menu" />
+      <label class="menu-button" for="nav-toggle" aria-hidden="true">
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="boutique.html">Boutique</a>
+        <a href="categories.html">Categories</a>
+        <a href="index.html#savoir-faire">Savoir-faire</a>
+        <a class="cart-link" href="paiement.html">Panier <span data-cart-count>0</span></a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Presentation Maison Habaya">
+        <img
+          class="hero-image"
+          src="assets/abaya-duo.jpg"
+          alt="Deux modeles portant des habayas noires elegantes"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Nouvelle capsule 2026</p>
+          <h1>Maison Habaya</h1>
+          <p class="hero-copy">
+            Des vetements habaya fluides, elegants et faciles a porter. Des coupes nettes,
+            des tissus doux, une allure calme pour chaque moment important.
+          </p>
+          <div class="hero-actions" aria-label="Actions principales">
+            <a class="button button-primary" href="boutique.html">Voir la boutique</a>
+            <a class="button button-secondary" href="boutique.html">Ajouter au panier</a>
+          </div>
+        </div>
+        <aside class="hero-note" aria-label="Details de la collection">
+          <span>Crepe premium</span>
+          <span>Retouches possibles</span>
+          <span>Pieces limitees</span>
+        </aside>
+      </section>
+
+      <section class="section section-intro reveal">
+        <div class="intro-copy">
+          <p class="eyebrow">Boutique modest fashion</p>
+          <h2>Des silhouettes propres, longues, legeres et soignees.</h2>
+        </div>
+        <p>
+          Maison Habaya propose une selection courte de pieces essentielles : habayas noires
+          intemporelles, tons sable lumineux et modeles de ceremonie. Chaque produit est pense
+          pour tomber naturellement, garder une belle tenue et rester confortable toute la journee.
+        </p>
+      </section>
+
+      <section class="section reveal" id="collection">
+        <div class="section-heading">
+          <p class="eyebrow">Selection</p>
+          <h2>Pieces populaires</h2>
+          <a href="boutique.html">Ouvrir la boutique</a>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <a class="product-media" href="#commande" aria-label="Commander Habaya Noir Essentiel">
+              <img src="assets/abaya-noire.jpg" alt="Habaya noire fluide sur fond textile" />
+              <span>Best-seller</span>
+            </a>
+            <div class="product-info">
+              <div>
+                <h3>Habaya Noir Essentiel</h3>
+                <p>Crepe doux, manches froncees, coupe longue.</p>
+              </div>
+              <strong>59 000 FCFA</strong>
+            </div>
+            <div class="card-size">
+              <span>Tailles</span>
+              <select class="product-size" aria-label="Taille Habaya Noir Essentiel">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <button
+              class="product-select cart-add"
+              type="button"
+              data-id="habaya-noir-essentiel"
+              data-name="Habaya Noir Essentiel"
+              data-price="59000"
+              data-price-label="59 000 FCFA"
+              data-image="assets/abaya-noire.jpg"
+            >
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="product-card reveal">
+            <a class="product-media" href="#commande" aria-label="Commander Habaya Sable Brodee">
+              <img src="assets/abaya-beige.jpg" alt="Habaya beige brodee avec ceinture ton sur ton" />
+              <span>Nouveau</span>
+            </a>
+            <div class="product-info">
+              <div>
+                <h3>Habaya Sable Brodee</h3>
+                <p>Broderie ton sur ton, ceinture fine, tombant aerien.</p>
+              </div>
+              <strong>72 000 FCFA</strong>
+            </div>
+            <div class="card-size">
+              <span>Tailles</span>
+              <select class="product-size" aria-label="Taille Habaya Sable Brodee">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <button
+              class="product-select cart-add"
+              type="button"
+              data-id="habaya-sable-brodee"
+              data-name="Habaya Sable Brodee"
+              data-price="72000"
+              data-price-label="72 000 FCFA"
+              data-image="assets/abaya-beige.jpg"
+            >
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="product-card reveal">
+            <a class="product-media" href="#commande" aria-label="Commander Habaya Nuit Signature">
+              <img src="assets/abaya-duo.jpg" alt="Habaya noire premium portee en duo" />
+              <span>Edition limitee</span>
+            </a>
+            <div class="product-info">
+              <div>
+                <h3>Habaya Nuit Signature</h3>
+                <p>Silhouette droite, taille smockee, finition satin mat.</p>
+              </div>
+              <strong>68 000 FCFA</strong>
+            </div>
+            <div class="card-size">
+              <span>Tailles</span>
+              <select class="product-size" aria-label="Taille Habaya Nuit Signature">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <button
+              class="product-select cart-add"
+              type="button"
+              data-id="habaya-nuit-signature"
+              data-name="Habaya Nuit Signature"
+              data-price="68000"
+              data-price-label="68 000 FCFA"
+              data-image="assets/abaya-duo.jpg"
+            >
+              Ajouter au panier
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="lookbook reveal" aria-label="Lookbook Maison Habaya">
+        <div class="lookbook-heading">
+          <div>
+            <p class="eyebrow">Lookbook</p>
+            <h2>Faites glisser l'inspiration.</h2>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-button" type="button" data-slider-prev aria-label="Image precedente">
+              <span aria-hidden="true">&#8592;</span>
+            </button>
+            <button class="slider-button" type="button" data-slider-next aria-label="Image suivante">
+              <span aria-hidden="true">&#8594;</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="slider" data-slider>
+          <div class="slider-track">
+            <article class="slide is-active">
+              <img src="assets/abaya-duo.jpg" alt="Deux habayas noires portees en studio" />
+              <div class="slide-copy">
+                <span>01</span>
+                <h3>Allure nuit</h3>
+                <p>Noir profond, coupe longue et presence tres douce.</p>
+              </div>
+            </article>
+            <article class="slide">
+              <img src="assets/abaya-beige.jpg" alt="Habaya beige brodee fluide" />
+              <div class="slide-copy">
+                <span>02</span>
+                <h3>Sable brode</h3>
+                <p>Un ton lumineux pour ceremonie, diner ou reception.</p>
+              </div>
+            </article>
+            <article class="slide">
+              <img src="assets/abaya-noire.jpg" alt="Habaya noire elegante assise en studio" />
+              <div class="slide-copy">
+                <span>03</span>
+                <h3>Essentiel doux</h3>
+                <p>Une piece simple, fluide, facile a accessoiriser.</p>
+              </div>
+            </article>
+          </div>
+          <div class="slider-dots" aria-label="Navigation du lookbook">
+            <button type="button" class="is-active" data-slider-dot aria-label="Afficher le look 1"></button>
+            <button type="button" data-slider-dot aria-label="Afficher le look 2"></button>
+            <button type="button" data-slider-dot aria-label="Afficher le look 3"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="atelier reveal" id="savoir-faire">
+        <div class="atelier-image">
+          <img src="assets/abaya-noire.jpg" alt="Detail d'une habaya noire en studio" />
+        </div>
+        <div class="atelier-copy">
+          <p class="eyebrow">Savoir-faire</p>
+          <h2>Une finition simple, visible dans les details.</h2>
+          <p>
+            Les modeles sont choisis pour leur fluidite, leur opacite et leur facilite
+            d'entretien. Les longueurs peuvent etre ajustees et chaque commande est verifiee
+            avant remise ou expedition.
+          </p>
+          <div class="feature-list">
+            <div>
+              <span>01</span>
+              <h3>Tissus selectionnes</h3>
+              <p>Crepe, chiffon et matieres respirantes avec une belle tenue.</p>
+            </div>
+            <div>
+              <span>02</span>
+              <h3>Coupes confortables</h3>
+              <p>Ampleur mesuree, manches propres, tombant long et naturel.</p>
+            </div>
+            <div>
+              <span>03</span>
+              <h3>Service rapide</h3>
+              <p>Conseil taille, reservation, livraison locale et retouches simples.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section guide reveal" id="guide">
+        <div class="guide-copy">
+          <p class="eyebrow">Guide express</p>
+          <h2>Trouvez la bonne longueur avant de commander.</h2>
+          <p>
+            Pour un rendu elegant, mesurez depuis l'epaule jusqu'a la cheville, puis ajoutez
+            2 a 3 cm si vous portez souvent des talons.
+          </p>
+        </div>
+        <div class="size-panel" aria-label="Guide des tailles">
+          <div class="size-row">
+            <span>Taille</span>
+            <span>S</span>
+            <span>M</span>
+            <span>L</span>
+            <span>XL</span>
+          </div>
+          <div class="size-row">
+            <span>Longueur</span>
+            <span>135 cm</span>
+            <span>140 cm</span>
+            <span>145 cm</span>
+            <span>150 cm</span>
+          </div>
+          <div class="size-row">
+            <span>Buste</span>
+            <span>96 cm</span>
+            <span>102 cm</span>
+            <span>110 cm</span>
+            <span>118 cm</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-section reveal" id="commande">
+        <div class="order-heading">
+          <p class="eyebrow">Parcours commande</p>
+          <h2>Du look a la commande.</h2>
+          <p>
+            Choisissez votre modele, indiquez votre taille et laissez vos coordonnees. La
+            demande est preparee automatiquement pour un contact rapide.
+          </p>
+        </div>
+
+        <div class="journey" aria-label="Etapes de commande">
+          <div class="journey-step is-active" data-step-card="1">
+            <span>01</span>
+            <strong>Modele</strong>
+            <p>Selectionnez une piece.</p>
+          </div>
+          <div class="journey-step" data-step-card="2">
+            <span>02</span>
+            <strong>Taille</strong>
+            <p>Precisez la longueur.</p>
+          </div>
+          <div class="journey-step" data-step-card="3">
+            <span>03</span>
+            <strong>Contact</strong>
+            <p>Ajoutez vos informations.</p>
+          </div>
+          <div class="journey-step" data-step-card="4">
+            <span>04</span>
+            <strong>Envoi</strong>
+            <p>Validez la demande.</p>
+          </div>
+        </div>
+
+        <div class="order-grid">
+          <form class="order-form" id="order-form">
+            <div class="field">
+              <label for="order-model">Modele</label>
+              <select id="order-model" name="model" data-order-input>
+                <option value="Habaya Noir Essentiel" data-price="59 000 FCFA">Habaya Noir Essentiel</option>
+                <option value="Habaya Sable Brodee" data-price="72 000 FCFA">Habaya Sable Brodee</option>
+                <option value="Habaya Nuit Signature" data-price="68 000 FCFA">Habaya Nuit Signature</option>
+                <option value="Commande sur mesure" data-price="Sur devis">Commande sur mesure</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <div class="field">
+                <label for="order-size">Taille</label>
+                <select id="order-size" name="size" data-order-input>
+                  <option value="">Choisir</option>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="order-color">Couleur</label>
+                <select id="order-color" name="color" data-order-input>
+                  <option>Noir</option>
+                  <option>Rouge</option>
+                  <option>Sable</option>
+                  <option>Ivoire</option>
+                  <option>Vert sauge</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <div class="field">
+                <label for="order-name">Nom</label>
+                <input id="order-name" name="name" type="text" placeholder="Votre nom" data-order-input />
+              </div>
+              <div class="field">
+                <label for="order-phone">Telephone</label>
+                <input id="order-phone" name="phone" type="tel" placeholder="+225..." data-order-input />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="order-note">Details</label>
+              <textarea
+                id="order-note"
+                name="note"
+                rows="4"
+                placeholder="Longueur souhaitee, date, retouche, livraison..."
+                data-order-input
+              ></textarea>
+            </div>
+
+            <button class="button button-primary order-submit" type="submit">Preparer ma commande</button>
+          </form>
+
+          <aside class="order-summary" aria-live="polite">
+            <span class="summary-tag">Resume</span>
+            <h3 id="summary-model">Habaya Noir Essentiel</h3>
+            <dl>
+              <div>
+                <dt>Prix</dt>
+                <dd id="summary-price">59 000 FCFA</dd>
+              </div>
+              <div>
+                <dt>Taille</dt>
+                <dd id="summary-size">A preciser</dd>
+              </div>
+              <div>
+                <dt>Couleur</dt>
+                <dd id="summary-color">Noir</dd>
+              </div>
+            </dl>
+            <p id="order-status">
+              Votre demande sera transformee en message clair pour finaliser la disponibilite.
+            </p>
+            <a class="summary-mail" id="summary-mail" href="mailto:contact@maisonhabaya.com?subject=Commande%20Maison%20Habaya">
+              Envoyer par email
+            </a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="contact reveal" id="contact-cta">
+        <div>
+          <p class="eyebrow">Commande privee</p>
+          <h2>Envie d'une piece precise ?</h2>
+          <p>
+            Envoyez votre taille, votre couleur preferee et la date souhaitee. Nous vous
+            repondons avec les modeles disponibles et les options de finition.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="contact.html">Page contact</a>
+          <a class="button button-secondary" href="tel:+2250000000000">Appeler la boutique</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer pro-footer">
+      <div class="footer-main">
+        <div class="footer-brand-block">
+          <a class="brand" href="index.html" aria-label="Maison Habaya accueil">
+            <span>Maison</span>
+            <strong>Habaya</strong>
+          </a>
+          <p>
+            Vetements habaya premium, pieces limitees, tailles uniformes S a 3XL et retouches
+            simples sur demande.
+          </p>
+        </div>
+        <nav class="footer-col" aria-label="Boutique">
+          <h3>Boutique</h3>
+          <a href="boutique.html">Toutes les pieces</a>
+          <a href="categories.html">Categories</a>
+          <a href="categorie-habayas.html">Habayas</a>
+          <a href="paiement.html">Panier & paiement</a>
+        </nav>
+        <nav class="footer-col" aria-label="Service client">
+          <h3>Service</h3>
+          <a href="index.html#guide">Guide des tailles</a>
+          <a href="index.html#savoir-faire">Savoir-faire</a>
+          <a href="commande.html">Commande privee</a>
+          <a href="contact.html">Assistance</a>
+        </nav>
+        <div class="footer-col footer-contact">
+          <h3>Contact</h3>
+          <p>Abidjan, livraison locale et expedition sur demande.</p>
+          <a href="tel:+2250000000000">+225 00 00 00 00 00</a>
+          <a href="mailto:contact@maisonhabaya.com">contact@maisonhabaya.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Maison Habaya</span>
+        <span>Paiement confirme apres validation de disponibilite.</span>
+        <a href="#top">Retour en haut</a>
+      </div>
+    </footer>
+  </body>
+</html>

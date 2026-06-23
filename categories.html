@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories | Maison Habaya</title>
+    <meta
+      name="description"
+      content="Categories Maison Habaya : habayas, ceremonie, essentiels et accessoires."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Maison Habaya accueil">
+        <span>Maison</span>
+        <strong>Habaya</strong>
+      </a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Ouvrir le menu" />
+      <label class="menu-button" for="nav-toggle" aria-hidden="true">
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="boutique.html">Boutique</a>
+        <a class="is-current" href="categories.html">Categories</a>
+        <a href="index.html#savoir-faire">Savoir-faire</a>
+        <a class="cart-link" href="paiement.html">Panier <span data-cart-count>0</span></a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-title reveal">
+        <p class="eyebrow">Categories</p>
+        <h1>Choisir par moment.</h1>
+        <p>
+          Une entree plus simple dans la collection : pieces du quotidien, tenues de ceremonie,
+          modeles habaya et accessoires coordonnes.
+        </p>
+      </section>
+
+      <section class="category-grid reveal">
+        <a class="category-card large" href="categorie-habayas.html">
+          <img src="assets/abaya-duo.jpg" alt="Categorie habayas" />
+          <span>01</span>
+          <h2>Habayas</h2>
+          <p>Les silhouettes longues et fluides de la maison.</p>
+        </a>
+        <a class="category-card" href="boutique.html?filter=ceremonie">
+          <img src="assets/abaya-beige.jpg" alt="Categorie ceremonie" />
+          <span>02</span>
+          <h2>Ceremonie</h2>
+          <p>Des tons clairs, broderies et matieres legeres.</p>
+        </a>
+        <a class="category-card" href="boutique.html?filter=essentiel">
+          <img src="assets/abaya-noire.jpg" alt="Categorie essentiels" />
+          <span>03</span>
+          <h2>Essentiels</h2>
+          <p>Noir, sauge, sable : les pieces les plus faciles a porter.</p>
+        </a>
+        <a class="category-card" href="boutique.html?filter=accessoire">
+          <img src="assets/hero-abaya.jpg" alt="Categorie accessoires" />
+          <span>04</span>
+          <h2>Accessoires</h2>
+          <p>Hijabs, voiles et finitions pour composer votre look.</p>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer pro-footer">
+      <div class="footer-main">
+        <div class="footer-brand-block">
+          <a class="brand" href="index.html" aria-label="Maison Habaya accueil">
+            <span>Maison</span>
+            <strong>Habaya</strong>
+          </a>
+          <p>
+            Categories, boutique, panier, tailles uniformes S a 3XL et commande accompagnee.
+          </p>
+        </div>
+        <nav class="footer-col" aria-label="Boutique">
+          <h3>Boutique</h3>
+          <a href="boutique.html">Toutes les pieces</a>
+          <a href="categories.html">Categories</a>
+          <a href="categorie-habayas.html">Habayas</a>
+          <a href="paiement.html">Panier & paiement</a>
+        </nav>
+        <nav class="footer-col" aria-label="Service client">
+          <h3>Service</h3>
+          <a href="index.html#guide">Guide des tailles</a>
+          <a href="index.html#savoir-faire">Savoir-faire</a>
+          <a href="commande.html">Commande privee</a>
+          <a href="contact.html">Assistance</a>
+        </nav>
+        <div class="footer-col footer-contact">
+          <h3>Contact</h3>
+          <p>Abidjan, livraison locale et expedition sur demande.</p>
+          <a href="tel:+2250000000000">+225 00 00 00 00 00</a>
+          <a href="mailto:contact@maisonhabaya.com">contact@maisonhabaya.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Maison Habaya</span>
+        <span>Paiement confirme apres validation de disponibilite.</span>
+        <a href="boutique.html">Voir la boutique</a>
+      </div>
+    </footer>
+  </body>
+</html>
